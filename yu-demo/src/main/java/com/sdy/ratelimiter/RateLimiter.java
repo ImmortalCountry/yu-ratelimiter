@@ -25,11 +25,10 @@ public class RateLimiter {
     /**
      * 为每个 api 在内存中存储限流计数器
      */
-    private ConcurrentHashMap<String, RateLimitAlg> counters;
+    private ConcurrentHashMap<String, RateLimitAlg> counters = new ConcurrentHashMap<>();
     private RateLimitRule rule;
 
     public RateLimiter() {
-        counters = new ConcurrentHashMap<>();
         // 将限流规则配置文件 ratelimiter-rule.yaml 中的内容读取到 RuleConfig 中
         InputStream in = null;
         RuleConfig ruleConfig = null;
