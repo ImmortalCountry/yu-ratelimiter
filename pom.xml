@@ -10,6 +10,7 @@
     <modules>
         <module>yu-context</module>
         <module>yu-core</module>
+        <module>yu-demo</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -19,6 +20,17 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webmvc</artifactId>
                 <version>5.2.6.RELEASE</version>
+            </dependency>
+            <dependency>
+                <!-- slf4j 日志门面-->
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.25</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>1.7.25</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
