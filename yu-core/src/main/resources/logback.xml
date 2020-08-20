@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--    配置集中管理的属性
+            可以直接改属性的 value 值
+            格式：$(name)
+    -->
+
+
+    <property name="pattern" value=""></property>
+    <appender name="" class="ch.qos.logback.core.ConsoleAppender">
+        <!--        控制数处对象流， 默认System.out 改为System.error-->
+        <target>System.err</target>
+        <!--        日志消息格式的配置-->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+<!--            <pattern></pattern>-->
+        </encoder>
+    </appender>
+</configuration>
